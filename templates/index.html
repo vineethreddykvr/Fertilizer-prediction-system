@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Fertilizer predection</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+<link rel="stylesheet" href="/static/css/style.css">
+  <!-- Favicons -->
+  <link href="https://img.freepik.com/premium-vector/organic-fertilizers-with-green-leaf-logo-design-business-product-nature-reserves-greening_567423-365.jpg?w=2000" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/static/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="/static/css/style.css" rel="stylesheet">
+
+</head>
+
+<script>
+  var speed = 8,
+    
+    moveBox = function(moveBy) {
+      var el = document.getElementById('ox'),
+          left = el.offsetLeft;
+      
+      if ( (moveBy > 0 && left > 500) || (moveBy < 0 && left < 50) ) {
+        clearTimeout(timer);
+        timer = setInterval(function() {
+          moveBox(moveBy * -0.95);  // to change direction
+        }, speed);
+      }
+      
+      el.style.left = left + moveBy + 'px';
+
+    };
+  
+var timer = setInterval(
+  function() { 
+    moveBox(1); 
+  }
+  , speed);
+  
+</script>
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">Team-26</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li><a href="https://en.wikipedia.org/wiki/Random_forest">About RF</a></li>
+
+          <li><a href="team.html">Team</a></li>                
+
+          <li><a href="contact.html">Contact</a></li>
+
+          <li><a href="/" class="getstarted">Get Started</a></li>
+
+        </ul>
+      </nav>
+ 
+
+    </div>
+  </header>
+  <!-- End Header -================================================================================->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(/static/img/slide/slide-1.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <div class="typewriter"><h2 class="animate__animated animate__fadeInDown">Welcome to <span>Fertilizer Prediction System</span></h2></div>
+              <p class="animate__animated animate__fadeInUp">Calculate the fertilizer materials to supply the amounts of N, P2O5, K2O, S recommended by a soil test report.fertilizer grades different from those given in the recommendation. This is useful when the fertilizer grades in the test report are not available locally.</p>
+              <a href="recommend.html">
+                <div  class=" btn btn-danger btn-get-started animate__animated animate__fadeInUp scrollto"> Let's get Predicted-></div>
+              </a>
+
+            </div>
+ 
+
+          </div>
+          
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(https://singularityhub.com/wp-content/uploads/2017/10/autonomous-robot-tractor-mowing-green-field-aerial-view-499876297-900x506.jpg); background-size: cover;">
+          <div class="carousel-container">
+            <div class="container">
+              <div class="typewriter"><h2 class="animate__animated animate__fadeInDown">Let's get started</h2></div>
+              <p class="animate__animated animate__fadeInUp">Before blending fertilizers, check a compatibility list to ensure they can be blended safely.</p>
+              <a href="recommend.html">
+                <div  class=" btn btn-danger btn-get-started animate__animated animate__fadeInUp scrollto"> Let's get Predicted-></div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+<div class="ox" id="ox">   
+  <i class="fa fa-close" style="margin-left: 345px; margin-top: 4px;" aria-hidden="true"></i>
+  <strong style="margin-left: 0px;">
+   <div class="row"> 
+    <div class="col-5">
+<img src="https://images.pond5.com/cartoon-cute-man-character-talking-footage-141861617_iconl.jpeg" style="width: 260px; height: max-content;" alt="">
+    </div>
+    <div class="col-7">
+     
+      <k>accuracy : <span style="color: rgb(62, 180, 62);">0.80 - 0.91;</span></k>
+    classifier :<k style="color: rgb(62, 180, 62);"> RandomForestClassifier;</k>
+    Technology :<p style="color: rgb(62, 180, 62);">Html,Css,JavaScript,Flask
+      <br>,Bootstrap,Machine-Learning</p>
+
+    </div>
+
+   </div>
+  </strong>
+</div>
+  <!-- End Hero -------------------------------------------------------------------------------------------------------------------------------------->
+
+  <br>
+<div class="about">
+  <div class="container-fluid"  style=" box-shadow: 4px 5px 4px 5px; width: 98%;" > 
+  <span>
+  <center><h1 style="color:rgb(0,0,0,0.6) ;">About Project</h1></center></span>
+
+  <br>
+  <div class=" container row ">
+    <div class="col-md-5 animate__animated animate__fadeInRight">
+       
+
+<img src="https://cdn.downtoearth.org.in/library/large/2019-10-10/0.39869300_1570709561_2495.jpg" style="width:100%;height: 230px; border-radius: 10px; margin-left: 3px;" alt="">
+
+</div>
+
+
+    <div class="col-md-7 animate__animated animate__fadeInUp">
+      <h1></h1>
+      <h1></h1>
+       <center>
+        <h3>
+          PROBLEM DEFINATION:</h3>
+       </center>
+     <p> As farmers are good in farming but sometimes unable to know which fertilizer to be used for the 
+      crop or land. So this project will predict the fertilizer to be used based on the previous collected 
+      data such as temperature, humidity, soil and crop type etc.
+  
+     </p>
+    </div>
+  
+
+    
+  </div>
+<br>
+<strong><center>
+  <div><h4>Abstract</h4></div>
+  </center></strong>
+<div class="container-fluid animate__animated animate__fadeInRight">
+
+  India is a nation of more than 1000 million individuals. Farming is the backbone of Indian
+  economy, contributing around 22 percent of total national output (GDP). The motivation of this 
+  project comes from the increasing suicide rates in farmers which may be due to low harvest in 
+  crops.Climate and other environmental changes have become a major threat in the agriculture field.
+  Machine learning is an essential approach for achieving practical and effective solutions for this 
+  problem. Predicting the fertilizer to be used from the historical available data like temperature, 
+  humidity, soil type, crop type and other parameters. We achieved this using the machine learning 
+  algorithms, i.e.,KNN, SVM, DecisionTreeClassifier and chosen Random Forest Algorithm which gave an 
+  accuracy of 95%. In this project an application is developed which predicts the fertilizer to be used 
+  for a particular crop.
+
+</div>
+<br>
+
+<center>
+<strong>  <div><h4>Solution</h4></div>
+</strong>
+  </center>
+<div class="container-fluid animate__animated animate__fadeInDown">
+  Making a model using meachine learning algorithm that predicts the fertilizer to be used for the crop based on the reqirments given to the model based,the output is produced farmers can easily undertand which fertilizer to be used . the output is based on the training of the model based on the previous data.
+</div>
+<br><br>
+<div class="container-fluid about-main">
+  <div class="row">
+    <div class="col-lg-5">
+      <img class="img-fluid rounded mb-5" style="width: 100%; height: 350px; margin-left: 5px;" src="https://img.freepik.com/free-photo/green-tea-bud-leaves-green-tea-plantations-morning_335224-955.jpg?w=2000" alt="" />
+    </div>
+    <div class="col-lg-7">
+<strong>    
+    <center><h2>About Prediction</h2></center>
+
+</strong>      <p>With the aim of sustainable crop production, reduction in the misuse of fertilizers and reduction of input cost by
+      optimizing the present pattern of excessive fertilizer application, our team provides fertilizer recommendation through
+      both the manual and soil test based interpretation of plant nutrients through soil database and static laboratory soil
+      analysis.</p>
+      <p>Our team has developed web-based software named Fertilizer Recommendation System(FRS). The system is capable of
+      generating fertilizer recommendations for selected crops by analysing the soil database developed.</p>
+      <p>The software requires proportion of nutrients in soil, land type, and crop type and variety information to generate
+      crop-specific instant fertilizer recommendation.</p>
+    </div>
+  </div>
+  <!-- /.row -->
+</div>
+  </div>
+</div>
+<br>
+  <!---------------------------------------------------------Footer--------------------------------------------------------------------------------->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Fertilize Predictor</h3>
+              <p>
+                CMR Collage of Egineering & Technology<br>
+                Medchal,Telangana <br><br>
+                <strong>Phone:</strong> 9248727210<br>
+                <strong>WEb site:</strong> <a style="color: skyblue;" href="http://www.cmrcet.ac.in/"> CMRCET</a> <br>
+              </p>
+              <div class="social-links mt-3">
+           
+                <a href="#"><i class="bi bi-geo-alt"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Team-26</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About</a></li>
+
+              <li><i class="bx bx-chevron-right"></i> <a href="team.html">Team</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="code.html">Contact us</a></li>
+            </ul>
+          </div>
+
+          
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright, All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/sailor-free-bootstrap-theme/ -->
+        Designed by <a href="team.html">Team-26</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+ <!-- Vendor JS Files -->
+ <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+ <script src="/static/vendor/glightbox/js/glightbox.min.js"></script>
+ <script src="/static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+ <script src="/static/vendor/swiper/swiper-bundle.min.js"></script>
+ <script src="/static/vendor/waypoints/noframework.waypoints.js"></script>
+ <script src="/static/vendor/php-email-form/validate.js"></script>
+
+ <!-- Template Main JS File -->
+ <script src="/static/js/main.js"></script>
+
+</body>
+
+</html>

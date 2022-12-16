@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Fertilizer predection</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Favicons -->
+    <link href="https://img.freepik.com/premium-vector/organic-fertilizers-with-green-leaf-logo-design-business-product-nature-reserves-greening_567423-365.jpg?w=2000" rel="icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="/static/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="/static/vendo/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/static/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="/static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"
+    <link href="/static/css/style.css" rel="stylesheet">
+  
+</head>
+<style>
+ .container-fluid
+ {
+  border-radius: 20px;
+  background-color: aliceblue;
+  box-shadow: 2px 2px 3px 6px;
+  
+ }
+ img{
+  box-shadow: 2px 2px 2px 4px;
+ }
+</style>
+<body>
+<center> <div clas="container" style="width:50% ; height: 120px max-content; border-radius: 10px; border-color: black ; border: 1px solid; margin-top: 30px; background-color: white; box-shadow: 3px 4px 5px 4px;">
+
+  <h5> <strong> accuracy :</strong> {{ acc }} </h5>
+  <h5> <strong>Fertilizer :</strong> {{ v }}</h5>
+  <h5> <strong>Classifier :</strong> {{ cls }}</h5>
+  
+</div>
+</center>
+   
+<br>
+<div class="container-fluid" style=" margin-left :20px;  margin-right: 20px; width: 90%;">
+<center>
+  <hr>
+  <h3 style="margin-top:8px ; color: rgb(0, 0,0,0.8);">Images of the Above Fertilizer</h3>
+</center>
+  <hr>
+
+  <!------------------------------------------------------------------------------------------------------------------------>
+{% if v=='Urea' %}
+<div class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img src="https://media.istockphoto.com/photos/farmer-giving-granulated-fertilizer-to-young-tomato-plants-picture-id959697442?k=20&m=959697442&s=612x612&w=0&h=jKQdAMM-aX6PsdFXgGexpdwM4qQf4OtdR-MvMMN9Ysg=" class="w-100 shadow-1-strong rounded mb-3" alt="" />
+
+    <img src="https://media.istockphoto.com/photos/farmer-giving-nitrogen-fertilizer-to-plant-picture-id1065206698?k=20&m=1065206698&s=612x612&w=0&h=dFDozvszZOFQtLZW-Cxc2Q-cpEVxmCM0kRrJQq-jkDk=" class="w-100 shadow-1-strong rounded mb-3" alt="Wintry Mountain Landscape" />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img src="https://media.istockphoto.com/photos/hand-full-of-small-fertilizer-picture-id476700398?k=20&m=476700398&s=612x612&w=0&h=C0Bk0q7i1nphBJUDs-PocwShC0dc_5ejoVtZcd1xnww=" class="w-100 shadow-1-strong rounded mb-3" alt="Mountains in the Clouds" />
+
+    <img
+      src="https://sc04.alicdn.com/kf/U28d33f41d84044fca747184895015edfj.jpg" class="w-100 shadow-1-strong rounded mb-3" alt="Boat on Calm Water" />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img src="https://m.economictimes.com/thumb/msid-92067398,width-1200,height-900,resizemode-4,imgsize-196430/ferti.jpg" class="w-100 shadow-1-strong rounded mb-3" alt="Waves at Sea" />
+
+    <img
+      src="https://5.imimg.com/data5/UI/VE/MY-13918961/fertilizer-urea-bag-500x500.jpg" class="w-100 shadow-1-strong rounded mb-3" style="height: 330px;" alt="Yosemite National Park" />
+  </div>
+</div>
+ {% endif %}
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+ {% if v=="DAP" %}
+ <div class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img src="https://www.observerbd.com/2020/05/06/observerbd.com_1588780691.jpg" class="w-100 shadow-1-strong rounded mb-3" alt="" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaKTtwqyzCBOzonlOGUNWGPz-55rpZLBzAar0BeJkySG4o4wpWvpZ7bs4OoEh8hWk6QFg&usqp=CAU" class="w-100 shadow-1-strong rounded mb-3" alt="Wintry Mountain Landscape" />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img src="https://5.imimg.com/data5/RL/NP/BL/SELLER-16199489/greenstar-50-kg-spic-dap-18-46-0-di-ammonium-phosphate-1000x1000.jpg" class="w-100 shadow-1-strong rounded mb-3" alt="Mountains in the Clouds" />
+     <img
+      src="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2021/05/fertiliser-pti-1621443644.jpg" class="w-100 shadow-1-strong rounded mb-3" alt="Boat on Calm Water" />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img src="https://5.imimg.com/data5/WP/IN/MY-6019073/all-purpose-dap-18-3a46-3a0-fertilizer-for-all-plants-gardenin-500x500.png" class="w-100 shadow-1-strong rounded mb-3" alt="Waves at Sea" />
+    <img
+      src="https://www.aplustopper.com/wp-content/uploads/2022/02/Advantages-and-Disadvantages-of-Fertilizers-1.jpg" " style="height: 330px;" alt="Yosemite National Park" />
+  </div>
+</div>
+ {% endif %}
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+ {% if v=="17-17-17" %}
+ <div class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img src="https://positivebloom.com/wp-content/uploads/2022/04/17-17-17-Fertilizer-Everything-You-Need-To-Know.jpg" class="w-100 shadow-1-strong rounded mb-3" alt="" />
+
+    <img src="https://imaginecare.co.ke/wp-content/uploads/2021/12/NPK-17-17-17-Fertilizer-DMBL-Ruiru-25kg.jpeg" class="w-100 shadow-1-strong rounded mb-3" alt="Wintry Mountain Landscape" />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img src="https://plantingfertilizer.com/wp-content/uploads/2019/07/npk-17-17-17-070501-1.jpg" class="w-100 shadow-1-strong rounded mb-3" alt="Mountains in the Clouds" />
+
+    <img
+      src="https://previews.123rf.com/images/pjaun/pjaun1504/pjaun150400264/38553318-thai-farmer-working-on-rice-field-applying-fertilizer.jpg" class="w-100 shadow-1-strong rounded mb-3" alt="Boat on Calm Water" />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1fk2wvgCUarkIQqJZX1U1EvqUH90culaj9m5Nvax04ueH0sR1hhH3Pm4ONCSd_Fz0GSM&usqp=CAU" class="w-100 shadow-1-strong rounded mb-3" alt="Waves at Sea" />
+
+    <img
+      src="https://positivebloom.com/wp-content/uploads/2022/04/big-bag-of-soil-and-plant-on-table.jpg.webp" class="w-100 shadow-1-strong rounded mb-3" style="height: 330px;" alt="Yosemite National Park" />
+  </div>
+</div>
+ {% endif %}
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+ {% if v=="20-20" %}
+
+ <div class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img src="https://4.imimg.com/data4/FC/SL/MY-19021921/gromor-fertilizer-500x500.jpg" class="w-100 shadow-1-strong rounded mb-3" alt="" />
+
+    <img src="https://5.imimg.com/data5/FT/EU/MY-53132786/npk-13-40-13-powder-500x500.jpg" class="w-100 shadow-1-strong rounded mb-3" alt="Wintry Mountain Landscape" />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR69ANzDY17pfBfw8HOeBu6AnX0JX8NZljpLD2y0g0YbxDKXkJU89dF_tzDsZQRh_HcTfk&usqp=CAU" class="w-100 shadow-1-strong rounded mb-3" alt="Mountains in the Clouds" />
+
+    <img
+      src="https://images.newindianexpress.com/uploads/user/imagelibrary/2019/10/25/w900X450/Farmers_pic.jpg?w=400&dpr=2.6" class="w-100 shadow-1-strong rounded mb-3" alt="Boat on Calm Water" />
+  </div>
+
+
+</div>
+
+ {% endif %}
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+ {% if k=="28-28" %}
+
+ <div class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img src="https://i.ytimg.com/vi/uo4WXUc8tE4/maxresdefault.jpg" class="w-100 shadow-1-strong rounded mb-3" alt="" />
+
+    <img src="https://i.ytimg.com/vi/1cDcKTfWetc/maxresdefault.jpg" class="w-100 shadow-1-strong rounded mb-3" alt="Wintry Mountain Landscape" />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPKOUBdAJuOGvL1mAajJL2bPXyoiVqgSTYlcJc2ELb_aucNgkmdZsJGXgb1OiZA2vV148&usqp=CAU" class="w-100 shadow-1-strong rounded mb-3" alt="Mountains in the Clouds" />
+
+    <img
+      src="http://blogs.worldbank.org/sites/default/files/users/user1111/TCard%20fertilizer.jpg" class="w-100 shadow-1-strong rounded mb-3" alt="Boat on Calm Water" />
+  </div>
+
+ 
+</div>
+
+ {% endif %}
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+ {% if v=="14-35-14" %}
+
+ <div class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img src="https://poorti.net/shop/img/p/1/0/9/5/1095.jpg" class="w-100 shadow-1-strong rounded mb-3" alt="" />
+
+    <img src="https://www.almanac.com/sites/default/files/styles/landscape/public/image_nodes/fertilizer-shutterstock_1087283084.jpg?itok=W0vqHN_-" class="w-100 shadow-1-strong rounded mb-3" alt="Wintry Mountain Landscape" />
+  </div>
+  <br>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6BP0IHKreuJ1x98Am-MzPlzhXrEjKW99AmdqKT-YavylVx9T8yHjHmBYvVTOtVXJIhbc&usqp=CAU class="w-100 shadow-1-strong rounded mb-3" alt="Mountains in the Clouds" />
+<br>
+    <img
+      src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9DcNVYs1Dpr8L2rGICxNAjNVb3gIAxo0MWA&usqp=CAU" class="w-100 shadow-1-strong rounded mb-3" alt="Boat on Calm Water" />
+  </div>
+
+  
+</div>
+
+ {% endif %}
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+{% if v=="10-26-26" %}
+<div class="row">
+ <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+   <img src="https://www.observerbd.com/2020/05/06/observerbd.com_1588780691.jpg" class="w-100 shadow-1-strong rounded mb-3" alt="" />
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaKTtwqyzCBOzonlOGUNWGPz-55rpZLBzAar0BeJkySG4o4wpWvpZ7bs4OoEh8hWk6QFg&usqp=CAU" class="w-100 shadow-1-strong rounded mb-3" alt="Wintry Mountain Landscape" />
+ </div>
+
+ <div class="col-lg-4 mb-4 mb-lg-0">
+   <img src="https://www.agroes.in/product-images/images.jpeg/105281000004380491/600x600" class="w-100 shadow-1-strong rounded mb-3" alt="Mountains in the Clouds" />
+    <img
+     src="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2021/05/fertiliser-pti-1621443644.jpg" class="w-100 shadow-1-strong rounded mb-3" alt="Boat on Calm Water" />
+ </div>
+
+ <div class="col-lg-4 mb-4 mb-lg-0">
+   <img src="https://5.imimg.com/data5/WP/IN/MY-6019073/all-purpose-dap-18-3a46-3a0-fertilizer-for-all-plants-gardenin-500x500.png" class="w-100 shadow-1-strong rounded mb-3" alt="Waves at Sea" />
+   <img
+     src="https://www.aplustopper.com/wp-content/uploads/2022/02/Advantages-and-Disadvantages-of-Fertilizers-1.jpg" " style="height: 330px;" alt="Yosemite National Park" />
+ </div>
+</div>
+{% endif %}
+
+
+
+</div>
+
+
+<br><br>
+
+
+</body>
+</html>
